@@ -42,7 +42,4 @@ This project explores the effects of **gradient filtering** on **grokking accele
 - Extend experiments to **other neural architectures**.
 - Investigate the link between **rank stability and generalization**.
 
-## Contact
-📧 [Your Email]  
-🔗 [Your LinkedIn (if applicable)]  
 
