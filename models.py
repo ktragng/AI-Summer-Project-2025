@@ -3,7 +3,7 @@
 
 # # Defined the model
 
-# In[ ]:
+# In[1]:
 
 
 import torch
@@ -23,7 +23,7 @@ class MLP(nn.Module):
         return self.network(x)
 
 
-# In[ ]:
+# In[2]:
 
 
 model = MLP(input_size=10, hidden_size=256, output_size=97, num_layers=8)
@@ -32,31 +32,31 @@ output = model(sample_input)
 print(output)
 
 
-# In[ ]:
+# In[3]:
 
 
 print(output.shape)
 
 
-# In[ ]:
+# In[4]:
 
 
 import torch.nn.functional as F
 print(F.softmax(output, dim=1))
 
 
-# In[ ]:
+# In[5]:
 
 
 sample_input = torch.randn(1, 10)
-target = torch.tensor([1])  # Assume class 1 as target
+target = torch.tensor([1])  
 
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 optimizer.zero_grad()
 output = model(sample_input)
-loss = criterion(output, target)  # No need for unsqueeze()
+loss = criterion(output, target)  
 loss.backward()
 optimizer.step()
 
