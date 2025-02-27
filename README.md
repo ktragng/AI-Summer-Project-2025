@@ -14,22 +14,22 @@ This project explores the effects of **gradient filtering** on **grokking accele
 - **Key Experiment:** Compare a **baseline model** vs. a **filtered model** using accuracy analysis and feature rank evolution.
 
 ## Project Structure
+📂 main.ipynb        - Jupyter Notebook for running experiments and visualization  
+📂 models/          - Contains trained model checkpoints  
+📂 train/           - Jupyter Notebook for training models  
+📂 utils/           - Python utilities for data processing and training  
+📂 __pycache__/     - Python cache files  
 
-main.ipynb – Jupyter Notebook for running experiments and visualization
-models/ – Jupyter Notebook for saving and loading trained models
-train/ – Jupyter Notebook for training models
-utils/ – Python utilities for data processing and training
-__pycache__/ – Python cache files
 
 
 ## Saved Model Checkpoints
+📌 results_1500_epochs.pth  - Model trained for 1500 epochs  
+📌 results_500_epochs.pth   - Model trained for 500 epochs  
+📌 results_advanced.pth     - Advanced training results  
+📌 results.pth             - General model results  
+📌 mlp_model.pth           - Trained MLP model  
+📌 loss_history.pth        - Training loss history  
 
-results_1500_epochs.pth – Model trained for 1500 epochs
-results_500_epochs.pth – Model trained for 500 epochs
-results_advanced.pth – Advanced training results
-results.pth – General model results
-mlp_model.pth – Trained MLP model
-loss_history.pth – Training loss history
 
 
 ## Key Findings
